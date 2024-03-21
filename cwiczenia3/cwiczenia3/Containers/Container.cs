@@ -8,12 +8,15 @@ public class Container : IContainer
     public int ContainerHeight { get; set; }
     public int ContainerWeight { get; set; }
     public int ContainerDepth { get; set; }
-    private SerialNumber _serialNumber;
+    public SerialNumber SerialNumber {
+        get;
+        set;
+    }
     public int MaxWeight { get; set; }
 
     public Container(string numsFirstLetters, string numsType, int cargoWeight, int cargoHeight, int containerWeight, int containerDepth, int maxWeight)
     {
-        _serialNumber = new SerialNumber(numsFirstLetters, numsType);
+        SerialNumber = new SerialNumber(numsFirstLetters, numsType);
         CargoWeight = cargoWeight;
         ContainerHeight = cargoHeight;
         ContainerWeight = containerWeight;
@@ -34,6 +37,5 @@ public class Container : IContainer
     {
         CargoWeight = 0;
     }
-    
     
 }

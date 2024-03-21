@@ -2,5 +2,5 @@
 
 public interface IHazardNotifier
 {
-    void Notifie();
+    string Notifie(String num);
 }
