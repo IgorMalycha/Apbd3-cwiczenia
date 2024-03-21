@@ -55,8 +55,14 @@ public class CargoShip
             if (allContainers[i].SerialNumber.getWholeNum() == number)
             {
                 cargoShip.allContainers.Add(allContainers[i]);
+                allContainers.Remove(allContainers[i]);
                 break;
             }
         }
+    }
+
+    public override string ToString()
+    {
+        return "speed: "+ MaxSpeed +" max capacity of containers: "+ MaxContainersNum+" Max Weight: "+ MaxAllContainersWeight;
     }
 }

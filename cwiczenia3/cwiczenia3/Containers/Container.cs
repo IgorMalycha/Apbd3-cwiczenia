@@ -37,5 +37,10 @@ public class Container : IContainer
     {
         CargoWeight = 0;
     }
-    
+
+    public override string ToString()
+    {
+        return "CargoWeight: "+CargoWeight+" ContainerHeight: "+ContainerHeight+" ContainerWeight: "+ContainerWeight
+               +" ContainerDepth: "+ContainerDepth+" SerialNumber: "+SerialNumber+" MaxWeight: "+ MaxWeight;
+    }
 }

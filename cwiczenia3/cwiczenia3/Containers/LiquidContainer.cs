@@ -19,7 +19,7 @@ public class LiquidContainer : Container, IHazardNotifier
         {
             if (cargoWeight >= (MaxWeight / 2))
             {
-                Console.Write(Notifie(SerialNumber.getWholeNum()));
+                Console.WriteLine(Notifie(SerialNumber.getWholeNum()));
             }
             else
             {

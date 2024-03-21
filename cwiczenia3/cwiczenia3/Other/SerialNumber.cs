@@ -19,4 +19,9 @@ public class SerialNumber
     {
         return NumsFirstLetters + "-" + NumsType + "-" + Num;
     }
+
+    public override string ToString()
+    {
+        return this.getWholeNum();
+    }
 }
